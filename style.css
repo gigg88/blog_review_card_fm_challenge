@@ -1,0 +1,95 @@
+/*## Colors
+
+### Primary
+
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(47, 88%, 63%);
+  
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 50%);
+    --neutral-black: hsl(0, 0%, 7%);
+  }
+
+ body{
+    background-color: var(--primary-color);
+ }
+
+ main {
+    display: flex; /* Enable flexbox for the main container */
+    justify-content: center; /* Center elements horizontally within main */
+    align-items: center; /* Optional: Vertically center if needed */
+  }
+
+ .neutral_white{
+    background-color: var(--neutral-white)
+ }
+
+ .neutral_grey{
+    color: var(--neutral-grey);
+ }
+
+ .neutral_black{
+    color: var(--neutral-black);
+ }
+
+ .primary_color{
+    background-color: var(--primary-color);
+ }
+
+ .mt-10{
+    margin-top: 10px;
+ }
+
+ .mb-10{
+    margin-bottom:10px;
+ }
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.p10{
+    padding: 10px;
+}
+
+ .round_border_8{
+    border-radius: 8px;
+ }
+
+ .round_border_5{
+    border-radius: 5px;
+ }
+
+ .border{
+    border: 2px solid black;
+ }
+
+ .article_img img {
+    width: 100%;
+ }
