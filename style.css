@@ -22,6 +22,16 @@
 - Weights: 500, 800
 */
 
+@font-face {
+   font-family: 'Figtree'; /* Specify font family name */
+   src: url('figtree.woff2') format('woff2'),  /* WOFF2 for modern browsers */
+        url('figtree.woff') format('woff');  /* WOFF fallback for older browsers */
+ }
+ 
+ .figtree-font {
+   font-family: 'Figtree', sans-serif; /* Use Figtree as primary, fallback to sans-serif */
+ }
+
 *{
     margin:0;
     padding:0;
@@ -38,13 +48,18 @@
 
  body{
     background-color: var(--primary-color);
- }
+    font-family: 'Figtree', sans-serif; /* Use Figtree as primary, fallback to sans-serif */
+  }
 
  main {
     display: flex; /* Enable flexbox for the main container */
     justify-content: center; /* Center elements horizontally within main */
     align-items: center; /* Optional: Vertically center if needed */
+    height: 100vh;
+    flex-direction: column;
   }
+
+
 
  .neutral_white{
     background-color: var(--neutral-white)
@@ -75,21 +90,76 @@
 }
 
 .p10{
-    padding: 10px;
+    padding: 20px;
 }
 
- .round_border_8{
-    border-radius: 8px;
+.px-10 {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.py-5 {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+ .rb-15{
+    border-radius: 1.5rem;
  }
 
- .round_border_5{
-    border-radius: 5px;
+ .rb-02{
+   border-radius: 0.2rem;
+}
+
+ .rb-1{
+    border-radius: 1rem;
+ }
+
+ .fw-bold {
+   font-weight: bold;
+ }
+
+ .fs-16{
+   font-size: 16px;
  }
 
  .border{
-    border: 2px solid black;
+    border: 1px solid black;
  }
 
  .article_img img {
     width: 100%;
+ }
+
+ .learning {
+   display: inline-block;
+ }
+
+ .wrapper {
+   max-width: 375px;
+   box-shadow: 10px 10px 0px black;
+ }
+
+ .avatar{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+ }
+
+ .avatar_img{
+   width: 2rem;
+ }
+
+ .article_short_description h2:hover {
+   color: var(--primary-color);
+   cursor: pointer;
+ }
+
+ .attribution {
+   font-size: 11px;
+   text-align: center;
+ }
+
+ .attribution a {
+   color: hsl(228, 45%, 44%);
  }
